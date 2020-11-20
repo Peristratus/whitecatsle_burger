@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+</head>
+<body>
+
+<section class="sec">
+   <header>
+     <a href=""><img src="../img/whitecat.png" class="logo"></a>
+    
+     <div class="toggleMenu" onlick ="menuToggle();"></div>
+     <ul class= "navigation">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="">Menu</a></li>
+       <li><a href="#">Chef's table</a></li>
+       <li><a href="#">Order Online</a></li>
+      </ul>
+    </header> 
+    <div class="content">
+      <div class= "textbox">
+        <h2> deliciously Yummy<br><span> white Castle Burgers</span></h2>
+        <a href="">View our specials</a>
+      </div>
+   <div class="imagbox">
+     <img src="../img/Ulti_burg.png" class="pepesi">
+     </div>
+     </div>
+     <ul class ="thumb">
+     <li><img src="../img/burg.png" onclick="imgSlider('../img/burg.png');changeBgColor('#0062b6')"></li>
+     <li><img src="../img/sth.png" onclick="imgSlider('../img/sth.png');changeBgColor('#F6A600')"></li>
+     <li><img src="../img/blkburg.png" onclick="imgSlider('../img/blkburg.png');changeBgColor('#e60c2c')"></li>
+     </ul>
+     <ul class="sci">
+        <li> <a href="https://www.facebook.com" target= "_blank"><img src="../img/facebook.png"> </a>
+        </li>
+        <li> <a href="https://www.twitter.com" target= "_blank"><img src="../img/twitter.png"> </a></li>
+        <li> <a href="https://www.youtube.com" target= "_blank"> <img src="../img/youtube.png"> </a></li>
+        <li> <a href="https://instergram.com" target= "_blank"><img src="../img/instagram.png"></a></li>
+        <li> <a href="" target= "_blank"><img src="../img/contact.png"></a></li>
+      </ul>
+  </section>
+     <script type="text/javascript">
+       function imgSlider(anything){
+       document.querySelector(".pepesi").src = anything;
+     }
+     function changeBgColor(color){
+     const sec = document.querySelector('.sec');
+     sec.style.background = color;
+
+     }
+
+     function menuToggle(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const navigation = document.querySelector('.navigation');
+     toggleMenu.classList.toggle('active');
+     navigation.classlist.toggle('active');
+     }
+     </script>
+    
+</body>
+</html>
