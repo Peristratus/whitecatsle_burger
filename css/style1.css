@@ -250,7 +250,7 @@ color: #ed0223;
 position: relative;
 width: 40px;
 height: 40px;
-background:url(imenue.png);
+background:url("../img/imenue.png");
 background-position: center;
 background-size: 30px;
 background-repeat: no-repeat;
